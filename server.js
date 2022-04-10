@@ -23,8 +23,8 @@ var transporter = nodemailer.createTransport({
 });
 
 app.post("/", function (req, res) {
-res.send('Welcome to neo Learn !!!!!!')
-}
+  res.send("Welcome to neo Learn !!!!!!");
+});
 
 app.post("/send", function (req, res) {
   var mailOptions = {
@@ -143,7 +143,7 @@ app.post("/send", function (req, res) {
   });
 });
 
-const port = Process.env.PORT || 3001;
+const port = 3001;
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
 });
