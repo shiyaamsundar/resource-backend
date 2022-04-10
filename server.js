@@ -22,6 +22,10 @@ var transporter = nodemailer.createTransport({
   },
 });
 
+app.post("/", function (req, res) {
+res.send('Welcome to neo Learn !!!!!!')
+}
+
 app.post("/send", function (req, res) {
   var mailOptions = {
     from: "help.neolearn@gmail.com",
